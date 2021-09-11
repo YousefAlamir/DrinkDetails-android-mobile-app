@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1EFEF"
+    tools:context=".MainActivity">
+
+    <SearchView
+        android:id="@+id/mainSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/categoriesTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:paddingStart="10dp"
+        android:text="@string/categories"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainSearchView" />
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoriesTxt"
+        app:tabBackground="@color/colorPrimaryDark"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabInlineLabel="true"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabTextAppearance="@style/tabCustomStyle"
+        app:tabTextColor="@color/colorAccent" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/mainViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabLayoutMain"
+        android:layout_marginBottom="40dp">
+
+
+    </androidx.viewpager.widget.ViewPager>
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/meowBtmNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:mbn_backgroundBottomColor="@color/colorPrimaryDark"
+        app:mbn_circleColor="@color/white"
+        app:mbn_countBackgroundColor="@color/colorPrimary"
+        app:mbn_countTextColor="@color/white"
+        app:mbn_defaultIconColor="@color/white"
+        app:mbn_selectedIconColor="@color/colorPrimary"
+        app:mbn_shadowColor="@color/black" >
+
+    </com.etebarian.meowbottomnavigation.MeowBottomNavigation>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

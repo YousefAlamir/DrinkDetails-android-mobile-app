@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntroActivity"
+    android:background="@drawable/bg">
+
+    <Button
+        android:id="@+id/skipBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:text="@string/skip_btn"
+        android:textColor="@color/main_purple"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/intro_view_pager"
+        android:layout_width="409dp"
+        android:layout_height="659dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/tab_indicator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:background="@drawable/next_btn_bg"
+        android:drawableEnd="@drawable/next"
+        android:drawableTint="@color/main_purple"
+        android:padding="10dp"
+        android:text="@string/next"
+        android:textColor="@color/main_purple"
+        app:layout_constraintBottom_toBottomOf="@+id/tab_indicator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tab_indicator"
+        app:layout_constraintTop_toTopOf="@+id/tab_indicator"
+        app:layout_constraintVertical_bias="0.636" />
+
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/start_btn_bg"
+        android:paddingStart="15sp"
+        android:paddingEnd="15sp"
+        android:text="@string/start"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_indicator"
+        android:layout_width="60dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="4dp"
+        app:tabIndicator="@color/colorPrimary"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nextBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tabBackground="@drawable/tab_indicator_selector">
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <ImageView
+        android:id="@+id/purple_circle"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toStartOf="@+id/intro_view_pager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/pink_polygon"
+        android:layout_width="220dp"
+        android:layout_height="420dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/intro_view_pager"
+        app:srcCompat="@drawable/polygon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

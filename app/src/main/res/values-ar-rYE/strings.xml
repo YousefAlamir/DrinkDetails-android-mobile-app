@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Drink Details</string>
+
+    <string name="next">التالي</string>
+    <string name="skip_btn">تجاهل</string>
+    <string name="drinks">أشهر وألذ المشروبات في تطبيق واحد</string>
+    <string name="fav">أضف المشروبات المضلة لديك الى المفضلة.</string>
+    <string name="ingredients">إعرف مكونات ومقادير كل شراب.</string>
+    <string name="start">لنبدأ</string>
+    <string name="all">كل الأصنــاف</string>
+    <string name="soft_drinks">المشروبات الغازية</string>
+    <string name="shakes">المخفوق</string>
+    <string name="cocoa">الكـوكوا</string>
+    <string name="cocktail">الكوكـتيل</string>
+    <string name="categories">الأصنــاف</string>
+    <string name="discover">إكتشف</string>
+    <string name="favorite">المفضلة</string>
+    <string name="cocktail_desc">مشروب مليئ بالطاقة والحيوية.</string>
+    <string name="cocoa_desc">الأفضل للجوالحار استرخي واحصل على كوكوا.</string>
+    <string name="soft_drinks_desc">أفضل شراب على الاطلاق.</string>
+    <string name="shakes_desc">المخفوق ليس فقط لذيذ ولكنه ايضا يحتوي الكثير من الفوائد.</string>
+    <string name="featuredTxt">خلطات متميزة</string>
+    <string name="shakesTypeTxt">أنواع المخفوق</string>
+    <string name="iconicCocktailsTxt">أشهر كوكتيل</string>
+    <string name="settings">الإعدادات</string>
+    <string name="languages">اللغات</string>
+    <string name="social">التواصل الإجتماعي</string>
+    <string name="share">مشاركة التطبيق</string>
+    <string name="about_us">حول الفريق</string>
+    <string name="about_app">حول التطبيق</string>
+    <string name="latestCocoaTxt">أحدث كوكوا</string>
+    <string name="aroundTheWorldTxt">حول العالم</string>
+    <string name="italy">إيطاليا</string>
+    <string name="us">أمريكا</string>
+    <string name="uk">المملكة المتحدة</string>
+    <string name="france">فرنسا</string>
+    <string name="yemen">اليمن</string>
+    <string name="english">الإنجليزية</string>
+    <string name="arabic">العربية</string>
+    <string name="discoverTitle">إكتشف</string>
+    <string name="ingredient">المكونات</string>
+    <string name="preparing">التحضير</string>
+</resources>

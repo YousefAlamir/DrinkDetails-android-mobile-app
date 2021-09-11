@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:background="@drawable/product_model_for_main_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:id="@+id/product_model_for_main_layout"
+    android:elevation="10dp">
+
+
+    <ImageView
+        android:id="@+id/product_model_for_main_img"
+        android:layout_weight="3"
+        android:layout_width="180dp"
+        android:layout_height="210dp"
+        android:padding="5dp"
+        app:srcCompat="@drawable/orange_juice" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:weightSum="5"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/product_model_for_main_name"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="4"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="@string/cocktail"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/product_model_for_main_share"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/share" />
+
+        <ImageButton
+            android:id="@+id/product_model_for_main_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:background="@android:color/transparent"
+            android:src="@drawable/favorite_black" />
+
+
+    </LinearLayout>
+</LinearLayout>

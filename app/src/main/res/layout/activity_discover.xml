@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1EFEF"
+    tools:context=".DiscoverActivity">
+
+    <TextView
+        android:id="@+id/discoverTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="@string/discoverTitle"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlSymmetry" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/discoverTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/featuredTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:paddingStart="15dp"
+                android:text="@string/featuredTxt"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlSymmetry" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/discoverTopRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="361dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/featuredTxt" />
+
+            <TextView
+                android:id="@+id/iconicCocktailsTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:paddingStart="15dp"
+                android:text="@string/iconicCocktailsTxt"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/discoverTopRecyclerView"
+                tools:ignore="RtlSymmetry" />
+
+            <GridView
+                android:id="@+id/discoverSecondGridView"
+                android:layout_width="match_parent"
+                android:layout_height="520dp"
+                android:layout_margin="10dp"
+                android:scrollIndicators="none"
+                android:scrollbars="none"
+                app:layout_constraintTop_toBottomOf="@+id/iconicCocktailsTxt" />
+
+            <TextView
+                android:id="@+id/shakesTypeTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:paddingStart="15dp"
+                android:text="@string/shakesTypeTxt"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/discoverSecondGridView"
+                tools:ignore="RtlSymmetry" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/discoverThirdRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/shakesTypeTxt" />
+
+            <TextView
+                android:id="@+id/latestCocoaTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:paddingStart="15dp"
+                android:text="@string/latestCocoaTxt"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/discoverThirdRecyclerView"
+                tools:ignore="RtlSymmetry" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/discoverForthRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/latestCocoaTxt" />
+
+            <TextView
+                android:id="@+id/aroundTheWorldTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:paddingStart="15dp"
+                android:text="@string/aroundTheWorldTxt"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/discoverThirdRecyclerView"
+                tools:ignore="RtlSymmetry" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/discoverLastRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/aroundTheWorldTxt" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+        </LinearLayout>
+    </ScrollView>
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/meowBtmNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:mbn_backgroundBottomColor="@color/colorPrimaryDark"
+        app:mbn_circleColor="@color/white"
+        app:mbn_countBackgroundColor="@color/colorPrimary"
+        app:mbn_countTextColor="@color/white"
+        app:mbn_defaultIconColor="@color/white"
+        app:mbn_selectedIconColor="@color/colorPrimary"
+        app:mbn_shadowColor="@color/black">
+
+    </com.etebarian.meowbottomnavigation.MeowBottomNavigation>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

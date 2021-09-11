@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F1EFEF"
+    tools:context=".FavoriteActivity">
+
+    <SearchView
+        android:id="@+id/favSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/colorAccent"/>
+    <TextView
+        android:id="@+id/favoriteTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/favorite"
+        android:paddingStart="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favSearchView" />
+
+    <GridView
+        android:id="@+id/favoriteProductGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favoriteTxt" />
+
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/meowBtmNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:mbn_backgroundBottomColor="@color/colorPrimaryDark"
+        app:mbn_circleColor="@color/white"
+        app:mbn_countBackgroundColor="@color/colorPrimary"
+        app:mbn_countTextColor="@color/white"
+        app:mbn_defaultIconColor="@color/white"
+        app:mbn_selectedIconColor="@color/colorPrimary"
+        app:mbn_shadowColor="@color/black" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

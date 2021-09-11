@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Drink Details</string>
+    <string name="next">Next</string>
+    <string name="skip_btn">Skip</string>
+    <string name="drinks">Most beverage products in one app</string>
+    <string name="fav">You can add drinks to your favorites</string>
+    <string name="ingredients">Know the ingredients of each drink</string>
+    <string name="start">Start</string>
+    <string name="all">All</string>
+    <string name="soft_drinks">Soft Drinks</string>
+    <string name="shakes">Shakes</string>
+    <string name="cocoa">Cocoa</string>
+    <string name="cocktail">Cocktail</string>
+    <string name="categories">Categories</string>
+    <string name="discover">Discover</string>
+    <string name="favorite">Favorites</string>
+    <string name="cocktail_desc">Has energy and vitality</string>
+    <string name="cocoa_desc">The best for hot wether, relax and have a Cocoa</string>
+    <string name="soft_drinks_desc">The best soft drink ever</string>
+    <string name="shakes_desc">Shakes is not only delisious but also has many benifts</string>
+    <string name="featuredTxt">Featured Collections</string>
+    <string name="shakesTypeTxt">Shakes Types</string>
+    <string name="iconicCocktailsTxt">Iconic Cocktails</string>
+    <string name="settings">Settings</string>
+    <string name="languages">Languages</string>
+    <string name="social">Social Media</string>
+    <string name="share">Share App</string>
+    <string name="about_us">About us</string>
+    <string name="about_app">About App</string>
+    <string name="latestCocoaTxt">Latest Cocoa</string>
+    <string name="aroundTheWorldTxt">Around the World</string>
+    <string name="italy">Italy</string>
+    <string name="us">U.S</string>
+    <string name="uk">U.K</string>
+    <string name="france">France</string>
+    <string name="yemen">Yemen</string>
+    <string name="english">English</string>
+    <string name="arabic">Arabic</string>
+    <string name="discoverTitle">Discover</string>
+    <string name="ingredient">Ingredients</string>
+    <string name="preparing">Preparing</string>
+
+</resources>
