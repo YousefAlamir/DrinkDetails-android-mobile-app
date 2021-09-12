@@ -40,9 +40,10 @@ public class DataBase extends SQLiteOpenHelper {
         String query1;
         String query2;
         String query3;
-        query1 = "DROP TABLE IF EXISTS Recipe;";
-        query2 = "DROP TABLE IF EXISTS Ingredients;";
-        query3 = "DROP TABLE IF EXISTS Favorite;";
+        query1 = "DROP TABLE IF EXISTS "+ List.Prodactdetails.TABALE_NAME +";";
+        query2 = "DROP TABLE IF EXISTS "+ List.Prodactdetails.TABALE_NAME2 +";";
+        query3 = "DROP TABLE IF EXISTS "+ List.Prodactdetails.TABALE_NAME3 +";";
+
         db.execSQL(query1);
         db.execSQL(query2);
         db.execSQL(query3);
